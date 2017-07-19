@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">BookListingApp</string>
+    <string name="search_label">Search</string>
+    <string name="edittext_hint">Enter title</string>
+    <string name="no_books">Nothing found</string>
+
+    <string name="saved_instance_book_list">BOOK_LIST</string>
+    <string name="saved_instance_search">BOOK_SEARCH</string>
+    <string name="network_unavailable">No network connection</string>
+    <string name="google_api_string">https://www.googleapis.com/books/v1/volumes?maxResults=20&amp;q=</string>
+    <string name="enter_query">Enter query</string>
+</resources>
