@@ -66,6 +66,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     private void setEmptyView() {
+        mBookArrayAdapter.clear();
         noBooksTextView.setText(getResources().getString(R.string.no_books));
         listView.setEmptyView(findViewById(R.id.no_books_textview));
     }
@@ -95,9 +96,9 @@ public class MainActivity extends AppCompatActivity {
                     }
                 });
                 mAsyncTask.execute(searchString);
-            } else {
-                setEmptyView();
             }
+            setEmptyView();
+
         } else {
             Toast.makeText(this, getResources().getString(R.string.enter_query), Toast.LENGTH_SHORT).show();
         }

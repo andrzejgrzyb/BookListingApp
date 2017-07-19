@@ -37,10 +37,6 @@ public class Book implements Parcelable {
         return authors;
     }
 
-    public void setAuthors(String[] authors) {
-        this.authors = authors;
-    }
-
     @Override
     public int describeContents() {
         return 0;
